@@ -1,5 +1,3 @@
-
-
 //Bài 1-6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên
 function exercise1_no6_function(){
     let myResult = document.getElementById("exercise1_no6_text");
@@ -171,5 +169,18 @@ function exercise2_no5_function() {
 
     }
     // myHeart.innerHTML = myText;
+}
+setInterval(exercise2_no5_colorChange, 500);
+let exercise2_no5_colorChange_flag = 0;
+function exercise2_no5_colorChange(){
+    let myHeart = document.getElementById("exercise2_no5_text");
+    if(exercise2_no5_colorChange_flag == 0){
+        myHeart.style.color = "red";
+        exercise2_no5_colorChange_flag = 1;
+    } else {
+        myHeart.style.color = "green";
+        exercise2_no5_colorChange_flag = 0;
+    }
+    
 }
 
